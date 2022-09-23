@@ -1,5 +1,6 @@
-const url =
-  "https://api.spoonacular.com/recipes/random?apiKey=76adec42384e4af4a3a56a2375fc3631";
+const url = "https://api.openbrewerydb.org/breweries/";
+const about = document.querySelector("#about");
+const home = document.querySelector("#home");
 
 console.log(url);
 fetch(url)
