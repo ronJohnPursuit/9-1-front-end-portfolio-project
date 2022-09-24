@@ -1,66 +1,43 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>front end portfolio project (Famish)</title>
+    <title>Parched</title>
+    <link rel="stylesheet" href="./aboutStyle.css" />
     <script src="./main.js" defer></script>
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="./about.html" defer></script> -->
   </head>
-  <body>
-    <h1>food recommendation project for portfolio</h1>
-    <h2>Ron Johnson</h2>
-  </body>
-</html>  -->
 
-<!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Parched</title>
-      <link rel="stylesheet" href="./aboutStyle.css" />
-      <script src="./main.js" defer></script>
-      <script src="./about.html" defer></script>
-    </head>
-
-    <body>
-      <div class="container">
-        <header>
-          <h1>Parched</h1>
-          <nav>
-            <ul>
-              <li><a href="#" target="_blank">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a id="reviews" href="#">Reviews</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div id="content">
-          <aside>
-<form ><input type="text" name="city" id="cityWithBeer" value="select city"><input type="submit" value="select"></form>
-          </aside>
-          <main>
-            <!-- <h2>Tell us about yourself</h2>
-            <form>
-              <input type="text" placeholder="name" />
-              <input type="text" placeholder="age" />
-              <input type="text" placeholder="address" />
-              <input type="text" placeholder="occupation" />
-              <input type="text" placeholder="email" />
-              <input type="text" placeholder="phone" />
-              <input type="text" placeholder="socials" />
-              <textarea placeholder="additional info" rows="5"></textarea>
-              <button type="submit">Join our team!</button>
-            </form> -->
-          </main>
-        </div>
-        <footer>
-          <h6>© 2022 Parched, LLC.</h6>
-        </footer>
+  <body class="cheers">
+    <div class="container">
+      <header>
+        <h1>Parched</h1>
+        <nav>
+          <ul>
+            <li><a href="#" target="_blank">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a id="reviews" href="#">Reviews</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="content">
+        <aside>
+          <form>
+            <h2>Select a state</h2>
+            <select name="" id="beerSelect">
+              <option value="" id="jsRemove">
+                <!-- (blank, no value), remaining `option`s will be populated with the movie titles from the API -->
+              </option>
+            </select>
+          </form>
+        </aside>
+        <main class="mainContent"><p id="brewery">Brewery Info</p></main>
       </div>
-    </body>
-  </html>
-</main>
+    </div>
+    <footer>
+      <h6>© 2022 Parched, LLC.</h6>
+    </footer>
+  </body>
+</html>
