@@ -6,7 +6,9 @@ I will create an application using the GIPHY API for data.
 
 ### User Stories
 
--- I want my user to be able to find a recipe for a specific meal they would like to have. But noches some thing they would like to have but some thing that they would like to make and accommodate for a group of people. Whether it be the users friends family, or colleagues this app will Randomly suggest a food based on everyone's needs. I will provide an about link to let the user know about who I am and how I came about making this application --
+<!-- -- I want my user to be able to find a recipe for a specific meal they would like to have. But noches some thing they would like to have but some thing that they would like to make and accommodate for a group of people. Whether it be the users friends family, or colleagues this app will Randomly suggest a food based on everyone's needs. I will provide an about link to let the user know about who I am and how I came about making this application -- -->
+
+New Purposal: I wanna make an application so that people that are traveling that our beer enthusiast can be able to find breweries and be able to contact those breweries that they want to go to. I also want to make it so that the user can be able to leave a review and to interact with other beer enthusiast that like to travel.
 
 **\*\*if you cannot write user stories, write a paragraph stating what api you will use and each functionality your application will have.**
 
