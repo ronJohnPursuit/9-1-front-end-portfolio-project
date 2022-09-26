@@ -50,12 +50,14 @@ fetch(url)
       console.log(dropDown.value);
       if (dropDown.value) {
         console.log(true);
-        mainContent.innerHTML = "<p id='brewery'>Brewery Info</p>";
+        mainContent.innerHTML = "<p id='brewery'>Brewery reviews</p>";
         fetch(url)
           .then((res) => res.json())
           .then((res) =>
             res.forEach((element) => {
               let berweryH3 = document.createElement("h3");
+              let reviewform = document.createElement("form");
+              let 
               if (
                 dropDown.value === element.state ||
                 dropDown.value === element.country
@@ -68,13 +70,14 @@ fetch(url)
                 //append to #titles which is the id for select
 
                 mainContent.append(berweryH3);
+                berweryH3.append(reviewform);
               }
             })
           );
       } else if (!dropDown.value) {
         console.log(false);
         alert("Please select a Location 🍻");
-        mainContent.innerHTML = "<p id='brewery'>Brewery Info</p>";
+        mainContent.innerHTML = "<p id='brewery'>Brewery reviews</p>";
       }
     });
   })
@@ -82,24 +85,26 @@ fetch(url)
     console.log(err);
   });
 
-reviewform.addEventListener("submit", (eve) => {
-  eve.preventDefault();
-  console.log("submit button", inputReview);
-  if (inputReview.value && movieTitle && dropDown.value) {
-    const reviewList = document.createElement("li");
-    reviewList.innerHTML = `<strong>${movieTitle}</strong>: ${inputReview.value}`;
-    reviews.append(reviewList);
-  }
-  if (!(inputReview.value && movieTitle && dropDown.value)) {
-    console.error("Movie selection and review is required");
-    alert("Movie selection and review is required");
-  }
-  inputReview.value = "";
-});
 
-reviewDelete.addEventListener("click", (eve) => {
-  console.log("working");
-  eve.preventDefault();
-  // const reviewClass = document.querySelectorAll(".singleReview");
-  reviews.innerHTML = ``;
-});
+  
+// reviewform.addEventListener("submit", (eve) => {
+//   eve.preventDefault();
+//   console.log("submit button", inputReview);
+//   if (inputReview.value && movieTitle && dropDown.value) {
+//     const reviewList = document.createElement("li");
+//     reviewList.innerHTML = `<strong>${movieTitle}</strong>: ${inputReview.value}`;
+//     reviews.append(reviewList);
+//   }
+//   if (!(inputReview.value && movieTitle && dropDown.value)) {
+//     console.error("Movie selection and review is required");
+//     alert("Movie selection and review is required");
+//   }
+//   inputReview.value = "";
+// });
+
+// reviewDelete.addEventListener("click", (eve) => {
+//   console.log("working");
+//   eve.preventDefault();
+//   // const reviewClass = document.querySelectorAll(".singleReview");
+//   reviews.innerHTML = ``;
+// });

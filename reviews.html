@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parched</title>
+    <link rel="stylesheet" href="./aboutStyle.css" />
     <link
       rel="icon"
       href="https://www.clipartmax.com/png/full/197-1973156_beer-icon-transparent.png"
     />
-    <link rel="stylesheet" href="./aboutStyle.css" />
-    <script src="./main.js" defer></script>
+    <script src="./reviews.js" defer></script>
     <!-- <script src="./about.html" defer></script> -->
   </head>
 
-  <body class="cheers">
+  <body class="reviews">
     <div class="container">
       <header>
-        <h1>Parched</h1>
+        <h1>Reviews</h1>
         <nav>
           <ul>
             <li>
@@ -51,9 +51,16 @@
                 <!-- (blank, no value), remaining `option`s will be populated with the movie titles from the API -->
               </option>
             </select>
+            <section class="add-movie">
+              <!-- <h2>Add a review</h2> -->
+
+              <label for="review">Your review</label>
+              <input type="text" id="review" />
+              <input type="submit" value="submit" />
+            </section>
           </form>
         </aside>
-        <main class="mainContent"><p id="brewery">Brewery Info</p></main>
+        <main class="mainContent"><p id="brewery">Brewery reviews</p></main>
       </div>
     </div>
     <footer>
